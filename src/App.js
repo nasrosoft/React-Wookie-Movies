@@ -5,18 +5,6 @@ import "./App.css";
 import Movies from "./component/Movies";
 import Details from "./component/Details";
 import NotFoundPage from "./component/NotFoundPage";
-import axios from "axios";
-
-axios
-  .get("https://wookie.codesubmit.io/movies")
-  .then(function (response) {
-    // handle success
-    console.log("axios", response);
-  })
-  .catch(function (error) {
-    // handle error
-    console.log("axios error :", error);
-  });
 
 const App = () => (
   <BrowserRouter>
